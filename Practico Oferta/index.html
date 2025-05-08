@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promocion especial</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+      }
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .contenedor {
+        position: absolute;
+        height: fit-content;
+        background-color: green;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        padding: 2vmin;
+      }
+      .contenedor > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .contenedor > form > input {
+        margin: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Video Juegos Memin</h3>
+    <div class="contenedor">
+      <form action="convertir.php" method="POST">
+        <label for="etiqueta-form">Ingrese su edad</label>
+        <input type="text" name="nombre" id="" placeholder="Nombre" required />
+        <input type="number" name="edad" id="" placeholder="Edad" required />
+        <button type="submit">enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
