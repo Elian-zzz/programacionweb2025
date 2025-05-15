@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Conversor</title>
     <style>
       * {
         padding: 0.5vmin;
@@ -20,17 +20,22 @@
       .contenedor {
         background-color: #fff;
         border-radius: 10px;
-        padding: 20px;
+        padding: 1.5rem;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
-        width: 30vw;
+        width: 30rem;
+        justify-content: center;
       }
       label {
         font-size: medium;
         color: rgb(167, 158, 158);
       }
-
+      .contenedor-escondido {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
       .contenedor > label {
         padding: 10px;
       }
@@ -41,24 +46,30 @@
   </head>
   <body>
     <div class="contenedor">
-      <h3>Conversor de monedas</h3>
-      <form action="conversor.php" method="POST"></form>
-      <label for="etiqueta-formulario"> Seleccione la moneda a cambiar</label>
-      <select name="select-monedas" id="select-moneda">
-        <option value="">seleccionar</option>
-        <option value="USD">Dolares</option>
-        <option value="EUR">Euros</option>
-        <option value="BRL">Reales (BRZ)</option>
-      </select>
-      <label for="">Selecione importe a cambiar</label>
-      <input
-        type="text"
-        name="importe"
-        id="importe"
-        placeholder="Ingrese el importe"
-        required
-      />
-      <button type="submit">aceptar</button>
+      <form action="conversor.php" method="POST">
+        <h3>Conversor de monedas</h3>
+        <div class="contenedor-escondido">
+          <label> Seleccione la moneda a cambiar</label>
+          <select name="select-monedas" id="select-moneda">
+            <option value="USD">Dolares</option>
+            <option value="EUR">Euros</option>
+            <option value="BRL">Reales (BRZ)</option>
+          </select>
+        </div>
+        <div class="contenedor-escondido">
+          <label>Selecione importe en pesos</label>
+          <input
+            type="text"
+            name="importe"
+            id="importe"
+            placeholder="200"
+            required
+          />
+        </div>
+        <div class="contenedor-escondido">
+          <button type="submit">aceptar</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
