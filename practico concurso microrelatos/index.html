@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluador de textos</title>
+    <style>
+      input {
+        background: transparent;
+        border: none;
+        padding: 1rem;
+      }
+      .contenedor {
+        background-color: rgb(191, 127, 127);
+        border-radius: 15px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-wrap: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <form action="archivo.php" name="formulario" method="POST">
+        <label id="cosete">Ingrese su texto</label>
+        <div class="aviso">
+          <label id="aviso">
+            El texto no debe de superar las 100 palbras ni los 700 caracteres
+          </label>
+        </div>
+        <textarea
+          id="story"
+          name="textarea"
+          rows="10"
+          cols="33"
+          placeholder="Ingrese su texto aquí"
+        ></textarea>
+        <button type="submit">evaluar</button>
+      </form>
+    </div>
+  </body>
+</html>
