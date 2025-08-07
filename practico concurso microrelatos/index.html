@@ -5,26 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evaluador de textos</title>
     <style>
-      input {
-        background: transparent;
-        border: none;
-        padding: 1rem;
-      }
-      .contenedor {
+      .contenedor > * {
         background-color: rgb(191, 127, 127);
         border-radius: 15px;
-        padding: 2rem;
+        padding: 3rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-grow: 1;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        width: 50dvw;
+        justify-self: center;
+      }
+      label {
+        color: rgb(132, 10, 10);
+        font-size: 1.21rem;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      p {
+        text-shadow: 0 0 5px white;
+        color: white;
+      }
+      button {
+        background-color: aquamarine;
+        border: none;
+        padding: 0.7rem;
+        border-radius: 15px;
+        font: 1em sans-serif;
+        transition: 50ms ease;
+      }
+      button:hover {
+        color: white;
+        transform: scale(1.1);
+        background-color: skyblue;
+      }
+      textarea {
+        border-radius: 5px;
+        background-color: rgb(82, 87, 92);
+        color: white;
       }
     </style>
   </head>
   <body>
     <div class="contenedor">
-      <form action="archivo.php" name="formulario" method="POST">
-        <label id="cosete">Ingrese su texto</label>
+      <form
+        action="jurado_digital_Elian_Gutierrez.php"
+        name="formulario"
+        method="POST"
+      >
         <div class="aviso">
           <label id="aviso">
             El texto no debe de superar las 100 palbras ni los 700 caracteres
@@ -35,9 +62,9 @@
           name="textarea"
           rows="10"
           cols="33"
-          placeholder="Ingrese su texto aquí"
+          placeholder="  Ingrese su texto aquí"
         ></textarea>
-        <button type="submit">evaluar</button>
+        <button type="submit">Enviar</button>
       </form>
     </div>
   </body>
