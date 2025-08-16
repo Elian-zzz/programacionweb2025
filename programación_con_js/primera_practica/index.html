@@ -4,11 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Primera Practica</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    
-
-
+    <div class="container-fluid">
+      <form
+        style="background-color: rgba(0, 0, 255, 0.164)"
+        class="p-3"
+        id="formulario"
+      >
+        <div class="mb-5" style="background-color: rgba(5, 104, 190, 0.295)">
+          <h1 class="align-center text-center p-3">
+            Calculadora de áreas y perímetros de figuras geométricas
+          </h1>
+        </div>
+        <h2>Circulo</h2>
+        <div class="mb-3">
+          <label class="form-label">Ingrese el radio del circulo</label>
+          <input
+            type="number"
+            class="form-control"
+            id="inputRadio"
+            aria-describedby="emailHelp"
+            required
+          />
+        </div>
+        <h2>Rectangulo</h2>
+        <div class="mb-3">
+          <label class="form-label">Ingrese el alto de su rectangulo</label>
+          <input
+            type="number"
+            class="form-control"
+            id="inputAlto"
+            aria-describedby="emailHelp"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Ingrese el ancho de su rectangulo</label>
+          <input
+            type="number"
+            class="form-control"
+            id="inputAncho"
+            aria-describedby="emailHelp"
+            required
+          />
+        </div>
+        <div class="alert alert-primary" role="alert">
+          El valor de los campos de entrada debe ser mayor a cero (0).
+        </div>
+        <button
+          type="reset"
+          class="btn btn-primary d-block mx-auto"
+          id="btnCalcular"
+        >
+          calcular
+        </button>
+        <button class="btn btn-secondary d-none mx-auto" id="reiniciar">
+          reiniciar
+        </button>
+        <div
+          class="resultado mx-4 px-2 justify-content-center mx-auto align-items-center my-3"
+          style="
+            background-color: rgba(0, 128, 0, 0.384);
+            border-radius: 10px;
+            border: 2px solid rgba(6, 90, 44, 0.966);
+            width: 30vw;
+            display: none;
+          "
+          id="resultado"
+        >
+          cosete
+        </div>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
