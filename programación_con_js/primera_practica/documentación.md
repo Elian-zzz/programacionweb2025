@@ -1,4 +1,6 @@
-# Título Principal (H1)
+# Documentación de la aplicación web
+La aplicación web consta de dos partes, un archivo *html* y un script *JavaScript*
+
 
 ## Sección (H2)
 ### Subsección (H3)
@@ -18,3 +20,4 @@
 # Bloque de código
 def hello():
     print("Hola GitHub!")
+
