@@ -10,7 +10,7 @@ con el fin de definir clases como plantillas sobre las cuales obtener las
 funciónes de `calcularArea()` y `calcularPerimetro()` de cada clase. 
 Ya que definimos métodos de nombres iguales dentro de cada
 clase, existe la posibilidad de usar *polimorfismo*.
-#### 1.1 Clases
+### 2. Clases
 La creación de clases refiere a la abstracción de los lementos requeridos y sus comportamientos.
 ```js
 // Funciónes descriptivas para calculo de areas y perimetros
@@ -44,12 +44,12 @@ class Circulo {
   }
 ```
 
-#### 1.2 Metodos estáticos
+### 3. Metodos estáticos
 Uso los métodos estáticos para que de ésta forma usar las funciónes directamente desde la clase sin la necesidad de definir un objeto de la clase.
 ```js
 Circulo.calcularArea(+radio.value)
 ```
-#### 2. Operadores lógicos
+### 4. Operadores lógicos
 Uso los operadores ternarios y short-cut de la función `Number()` para la dinamización del flujo de datos
 Short-cut de **Number()**
 ```js
@@ -63,7 +63,7 @@ ancho != 0 && alto != 0
           ? (ancho * alto).toFixed(2)
           : "Error: Se esperaban valores mayores a cero";
 ```
-#### 3. Modificación del DOM
+### 5. Modificación del DOM
 
 ## Fundamentos de el archivo **HTML**
 
