@@ -1,19 +1,24 @@
 # Documentación de la aplicación web
-La aplicación web consta de dos partes, un archivo **html** y un script **JavaScript**,
-describiré paso a paso como se conforman cada parte explicando los recusos utilizados.
+La aplicación web consta de dos partes, un archivo **html** y un script **JavaScript**
+Describiré paso a paso como se conforman cada parte explicando los recusos utilizados.
 
-## fundamentos delarchivo **JavaScript**
+## fundamentos de el archivo **JavaScript**
 
 ### 1. Programación orientada a objetos
+En la aplicación web se utiliza una organización orientada a objetos 
+con el fin de definir clases como plantillas sobre las cuales obtener las
+funciónes de **calcularArea()** y **calcularPerimetro** de cada clase. 
+Ya que definimos métodos de nombres iguales dentro de cada
+clase, existe la posibilidad de usar *polimorfismo*.
 #### 1.1 Clases
+
 #### 1.2 Metodos estáticos
-#### 1.3 Operadores lógicos
-#### 1.3 Modificación del DOM
+#### 2. Operadores lógicos
+#### 3. Modificación del DOM
 
-## fundamentos delarchivo **HTML**
+## fundamentos de el archivo **HTML**
 
-### 1. Programación orientada a objetos
-
+### 1. Boostrap
 
 **Texto en negrita**  
 *Texto en cursiva*  
