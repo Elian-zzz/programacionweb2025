@@ -1,9 +1,20 @@
-# Nombre del Proyecto  
+# Título Principal (H1)
 
-## Descripción  
-Breve explicación del proyecto y sus objetivos.  
+## Sección (H2)
+### Subsección (H3)
 
-## Instalación  
-1. Clona el repositorio:  
-   ```bash
-   git clone https://github.com/usuario/repo.git
+**Texto en negrita**  
+*Texto en cursiva*  
+`Código en línea`  
+
+- Lista no ordenada
+   - Subelemento
+1. Lista ordenada
+
+[Enlace](https://ejemplo.com)  
+![Imagen](ruta/imagen.png)  
+
+```python
+# Bloque de código
+def hello():
+    print("Hola GitHub!")
