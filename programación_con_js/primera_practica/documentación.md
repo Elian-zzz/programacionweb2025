@@ -47,11 +47,10 @@ class Circulo {
 ### 3. Metodos estáticos
 Uso los métodos estáticos para que de ésta forma usar las funciónes directamente desde la clase sin la necesidad de definir un objeto de la clase.
 ```js
-Circulo.calcularArea(+radio.value)
+Circulo.calcularArea()
 ```
 ### 4. Operadores lógicos
 Uso los operadores ternarios y short-cut de la función `Number()` para la dinamización del flujo de datos
-Short-cut de **Number()**
 ```js
 // EL + es un short-cut de la función Number()
 Circulo.calcularArea(+radio.value)
