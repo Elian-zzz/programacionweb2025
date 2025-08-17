@@ -50,9 +50,18 @@ Uso los métodos estáticos para que de ésta forma usar las funciónes directam
 Circulo.calcularArea(+radio.value)
 ```
 #### 2. Operadores lógicos
-Uso los operadores ternarios y short-cut de if's para la dinamización del flujo de datos
+Uso los operadores ternarios y short-cut de la función `Number()` para la dinamización del flujo de datos
+Short-cut de **Number()**
 ```js
+// EL + es un short-cut de la función Number()
 Circulo.calcularArea(+radio.value)
+```
+Operadores ternarios
+```js
+// detrás del ? se encuentra la condición, por orden el siguiente espacio representa la acción si el if se cumple o despues de los : el else 
+ancho != 0 && alto != 0
+          ? (ancho * alto).toFixed(2)
+          : "Error: Se esperaban valores mayores a cero";
 ```
 #### 3. Modificación del DOM
 

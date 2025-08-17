@@ -1,14 +1,3 @@
-//
-//
-//
-//       FALTA HACER EL BOTON DE REINICIAR
-//
-//
-//
-//
-//
-//
-
 document.addEventListener("DOMContentLoaded", () => {
   // Espera a que todos los elementos del DOM estén cargados
   class Circulo {
